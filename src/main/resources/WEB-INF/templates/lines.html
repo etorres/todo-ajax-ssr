@@ -1,0 +1,9 @@
+<tr data-th-each="todo: ${todos}">
+    <td data-th-text="${todo.id}"></td>
+    <td data-th-text="${todo.label}"></td>
+    <td>
+        <label>
+            <input type="checkbox" data-th-checked="${todo.completed}" data-hx-trigger="click" data-th-data-hx-patch="'/todo/tasks/' + ${todo.id}" data-hx-vals='js:{"checked": event.target.checked}' />
+        </label>
+    </td>
+</tr>
