@@ -57,7 +57,6 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       "co.fs2" %% "fs2-core" % "3.11.0",
       "co.fs2" %% "fs2-io" % "3.11.0",
-      "com.47deg" %% "scalacheck-toolbox-datetime" % "0.7.0" % Test,
       "com.comcast" %% "ip4s-core" % "3.6.0",
       "com.lmax" % "disruptor" % "3.4.4" % Runtime,
       "com.monovore" %% "decline" % "2.4.1",
@@ -77,7 +76,6 @@ lazy val root = (project in file("."))
       "org.scalameta" %% "munit" % "1.0.0" % Test,
       "org.scalameta" %% "munit-scalacheck" % "1.0.0" % Test,
       "org.thymeleaf" % "thymeleaf" % "3.1.2.RELEASE",
-      "org.thymeleaf.testing" % "thymeleaf-testing" % "3.1.2.RELEASE" % Test,
       "org.typelevel" %% "case-insensitive" % "1.4.2",
       "org.typelevel" %% "cats-core" % "2.12.0",
       "org.typelevel" %% "cats-effect" % "3.5.4",
