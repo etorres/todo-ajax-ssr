@@ -89,6 +89,7 @@ lazy val root = (project in file("."))
       "org.typelevel" %% "vault" % "3.6.0",
       "org.webjars" % "bootstrap" % "5.3.3" % Runtime,
       "org.webjars" % "webjars-locator" % "0.52" % Runtime,
+      "org.webjars.npm" % "bootswatch" % "5.3.3" % Runtime,
       "org.webjars.npm" % "htmx.org" % "2.0.3" % Runtime,
     ),
     onLoadMessage := {

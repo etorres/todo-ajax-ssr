@@ -39,7 +39,7 @@ object TasksService:
         override def delete(filter: Filter): IO[Unit] = filter match
           case Filter.Completed => stateRef.update(_.filterNot(_.completed))
         override def find(id: Id): IO[Option[Task]] = stateRef.get.map(_.find(_.id == id))
-        override def list(): IO[List[Task]] = stateRef.get.map(identity)
+        override def list(): IO[List[Task]] = stateRef.get.map(_.sortBy(_.id))
         override def update(task: Task): IO[Unit] =
           stateRef.update(currentState => task :: currentState.filterNot(_.id == task.id))
     yield taskService

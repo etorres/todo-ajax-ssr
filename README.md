@@ -16,6 +16,11 @@ sbt -v -Dfile.encoding=UTF-8 +check +test
 ```shell
 sbt Universal/packageBin
 ```
+### Debugging htmx configuration
+
+```javascript
+console.log(JSON.stringify(htmx.config, null, 2));
+```
 
 ## Resources
 
